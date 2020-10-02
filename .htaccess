@@ -1,4 +1,1 @@
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . https://diycapta-5f756b43f229a07ba14b8.herokuapp.com/index.html [R=301,L]
+ErrorDocument 404 /index.html
