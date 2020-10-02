@@ -1,23 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Please wait</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<script src='https://www.hCaptcha.com/1/api.js' async defer></script>
-<script type="text/javascript">
-  if (response() == "success") {
-    function Redirect() {
-      window.location.href = "example.com"; // Correct here
-    }
-    document.write("You will be redirected to a new page in 5 seconds ");      
-      setTimeout(Redirect,5000); // Correct here
-  }
-  else alert("You can't proceed!");
-</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </head>
-
 <body>
-<div id="cf-hcaptcha-container"><div class="h-captcha" data-sitekey="dc07d759-0d8f-4d5d-ac7b-c1b3d89f8dc7">
+    <div class="container">
+        <h1 class="mt-5 text-center">hCaptcha demo for PHP</h1>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <form method="post" action="index.php">
+                <div class="form-group">
+                   
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+               
+                <div class="form-group form-check">
+                    <div class="h-captcha" data-sitekey="dc07d759-0d8f-4d5d-ac7b-c1b3d89f8dc7"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
 </body>
 </html>
